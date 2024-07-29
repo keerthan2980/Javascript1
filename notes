@@ -1,0 +1,55 @@
+1..REACT::
+React is a JavaScript library for building user interfaces.
+React is used to build single-page applications.
+React allows us to create reusable UI components.
+2..Some times me need to install  npm modules for that use commends ::
+ npm install -g npm
+3..INSTILATION OF REACT ::
+ rect is created using commends  are::
+  a).npx create-react-app appname 
+    it will create the react app in javascript 
+  b).npx create-react-app my-app --template typescript
+    it will create the react app in typescript 
+4..after executing this commends it will show some instructions follow that 
+  instructions (cd filename(change the location of the) and npm start(for running the app) )
+5.. now you are react app is created with some packages and other things u can find some folders and files in the react folder(created folder)
+6.. now in src folder create a folder (components)
+7.. now in components folder yu can write the codes in jsx(javascript) and tsx(typescript) extensions (filename.jsx/tsx) (depend on created react app)
+   example of tsx( ......
+    function Hello() {
+    const name = "Keerthan";
+    return (
+        <> (use depend up)
+        <h2>You are all welcome to TypeScript</h2>
+        <h4>Welcome...{name}</h4>
+      </>
+       );
+          }
+   export default Hello;
+.... )
+ example of jsx(..............
+    import React from 'react';
+    function Hello() {
+    const name = "Keerthan";
+    return (
+    <>
+      <h2>You are all welcome to TypeScript</h2>
+      <h4>Welcome...{name}</h4>
+    </>
+  ); 
+          }
+
+export default Hello;
+
+In this JSX code, we import React at the beginning to use JSX syntax. The rest of the component remains the same,
+.........)  
+
+
+8..after that come to App.js/App.tsx  file (open it )
+9..you will see come code in writen inside the react(.....code....) modife it for u r code 
+10..now u have to import the code writen in tsx/jsx file 
+11.. write<function(Message)></function(Message)> in tsx/jsx file 
+12...import the file in react by writing starting of the code (import Hello from './components/message';) or u can directly import this in vs code by fixind(it show the error and u can fix it it will auto import the floder)
+13...start running the react app(npm start //commend) 
+
+by this steps u can create and run the react app
