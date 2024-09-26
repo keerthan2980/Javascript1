@@ -1,0 +1,27 @@
+javascript is a high -level programming language primarily used for creating interactive and dynamic web pages
+
+js run on the client side ,and executed by the user's web browser 
+
+application 
+frontend and backend 
+more libraries and frame works ;
+
+front end 
+  react,
+backend 
+
+variable in javascript 
+ variables are used to store and manipulate data  name container which hold values 
+
+
+ var -- we can decleare and change the valu of the variable n times ( we can change its value and redefined)
+
+ let -- by using let keyword we can only declear the variable at once one we can change the value of the variable 
+
+   we can change its value and  we can not redefined
+ 
+ const-- by using this we can decleare the variable at once only we cant chane the value of the variable 
+
+   we can not  change its value and  we can not redefined the variable
+
+   nither the value and variab
