@@ -24,4 +24,6 @@ variable in javascript
 
    we can not  change its value and  we can not redefined the variable
 
-   nither the value and variab
+   nither the value and variab 
+
+   welcome to my javascript
