@@ -26,4 +26,153 @@ variable in javascript
 
    nither the value and variab 
 
-   welcome to my javascript
+ Functions in javascript 
+
+ function app(){
+  statement 
+ } 
+
+ example ::
+ 
+  function Sample(){
+     document.write("welcome to my world");
+ }
+
+ Sample(); 
+
+
+ Scopes ::
+  Global -- used entire document 
+  functional 
+  Block
+
+ /// Return function 
+
+ functional expression -- assigning a function to a variable
+ Anonymous function -- a function without name 
+ function with parameters and return value 
+ 
+// Methods 
+array --
+Push()--adds element to last
+,pop()-- remove from last,
+shift()--remove 1st element 
+,unshift()-- adds one or more elements to the array 
+,concat()-- combain to or more is Arrays ,
+             join()= 
+creates a new string by concatenating all the elements of an array and 
+ returns a string by a specified separator." 
+
+ let a =[10,2,06,78,"hello"]
+ let k=a.join("/")
+ console.log(k)------ 10/2/6/78/hello
+
+
+,slice()----- ("Returns a shallow copy of a portion of an array into a new array.")
+let k=[10,20,40,"ke","re",52,"88","gggg"];
+let h=k.slice(0,5);
+console.log(h)-----[ 10, 20, 40, 'ke', 're' ]
+,splice()------("Changes the contents of an array by removing, replacing, or adding elements.")
+let k=[10,20,30,40,50,60,70,80,90,100];
+//let h=k.splice(1,5);// remove 
+//console.log(h)------[ 20, 30, 40, 50, 60 ]
+
+let k=[10,20,30,40,50,60,70,80,90,100];
+let z=k.splice(3,1,"hello");// remove index 3 and replace
+console.log(z);
+console.log(k)--
+//output 
+[ 40 ] // replace item
+[
+  10,      20, 30,
+  'hello', 50, 60,
+  70,      80, 90,
+  100
+]
+/// replace 
+let k=[10,20,30,40,50,60,70,80,90,100];
+let z=k.splice(3,4,"hello");// remove index 3 and replace and remove next elemnt if u increace the number the elements will also remove
+console.log(z);
+console.log(k)
+// add
+let k=[10,20,30,40,50,60,70,80,90,100];
+console.log(k.length+"length before");
+let z=k.splice(3,0,"hello");// added "hello before the index 3 "
+console.log(k.length);
+console.log(k)
+Output:
+
+10 length before
+11
+[
+  10,      20,  30,
+  'hello', 40,  50,
+  60,      70,  80,
+  90,      100
+]
+
+,indexof(),
+// if a function is called inside a function or a method is called call backfunction
+forEach() -- // forEach() = ("Executes a provided function once for each array element.")
+
+let k = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let r = ""; // Initialize as an empty string to accumulate the results
+
+k.forEach(function(item) {
+    r = (item * 2) // Concatenate the result with a space
+    console.log(r);
+});
+
+output ------20 40 60 80 100 120 140 160 180 200 // the out put will be line by line 
+
+if u want the out put in a single line 
+let k = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let r = ""; // Initialize as an empty string to accumulate the results
+
+k.forEach(function(item) {
+    r += (item * 2)+" "; // Concatenate the result with a space
+
+});
+    console.log(r.trim());
+
+
+
+string ----
+
+split()-------
+In Python, split() 
+is a method of the str (string) class. It splits a string into a list of substrings based on a specified delimiter (default is whitespace).
+
+python out put
+k="welcome to my world"
+
+print(k.split(" ")) 
+
+['welcome', 'to', 'my', 'world']
+
+
+In JavaScript, split() is a method of the String object. It splits a string into an array of substrings based on a specified delimiter.
+
+let ra ="welcome to my world";
+
+console.log(ra.split("")); 
+javascript output 
+Output:
+
+[
+  'w', 'e', 'l', 'c', 'o',
+  'm', 'e', ' ', 't', 'o',
+  ' ', 'm', 'y', ' ', 'w',
+  'o', 'r', 'l', 'd'
+]
+
+,replace(), 
+trim()-- remove white spaces , toUpperCase(), 
+charAt()---
+let v="welcome";
+console.log(v.charAt(3))// display the character at 3rd index
+
+ ,toLowerCase(), substring()
+object
+
+ 
