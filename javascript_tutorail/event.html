@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Welcome to the JavaScript Event Listeners</h1>
+     <button id="event1">click me </button>
+     <button id="event2">click me 2 </button>
+     <button id="remove">remove </button>
+     <button id="restore">restore event listener</button> 
+     <h1 id="changecolor">mouse in </h1>
+     <p id="change">welcome </p>
+     <p id="change2">to my world</p>
+
+     <form id="myform">
+        <label for="name">Enter the name</label>
+        <input type="text" id="name" placeholder="Enter the name"> 
+    
+        <button type="submit">Submit</button> 
+    </form>
+    
+    <div>
+        <h2>Welcome ...</h2>
+        <h3 id="displayname"></h3>
+    </div>
+    <!-- change event -->
+     <labei for="colorchange">Select the color:</labei>
+    <select id="colorchange">
+        <option value="">Change the color</option><!--- Default option -->
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    
+    <div id="box" style="border: 2px solid black; height: 50px; width: 50px;"></div>
+
+     <script>
+        // writing the function directly 
+        const btn=document.getElementById("event1");
+
+        btn.addEventListener("click",function(){
+
+        document.getElementById("change").style.backgroundColor="red";
+            
+        }) 
+     
+        // wrting the function and assigining to other 
+        const btn1=document.getElementById("event2");
+        
+        btn1.addEventListener("click",Changecolor);
+
+        function Changecolor(){
+
+            document.getElementById("change2").style.backgroundColor="yellow";
+        }
+
+        const mouse =document.getElementById("changecolor");
+
+        mouse.addEventListener("mouseover",function(){
+            document.getElementById("changecolor").style.backgroundColor="orange";
+        })
+        mouse.addEventListener("mouseout",function(){
+            document.getElementById("changecolor").style.backgroundColor="pink";
+        }) 
+
+            const remove = document.getElementById("remove");
+
+            remove.addEventListener("click", addborder);
+
+            function addborder() {
+                // Add the border to the <h1> tag when the button is clicked
+                document.querySelector("h1").style.border = "2px dotted black";
+
+                // Check the condition only after the button is clicked
+                if (10 > 20) {
+                    // Remove the event listener so that the function won't be called again
+                    remove.removeEventListener("click", addborder);
+                    document.querySelector("h1").style.backgroundColor = "red"; 
+                    console.log("Event listener removed after clicking the button");
+                } else {
+                    // This block will only be executed if the condition is false (which it isn't here)
+                    remove.addEventListener("click", function() {
+                        document.querySelector("h1").style.backgroundColor = "blue";
+                    });
+                }
+            }
+
+
+        /* Initially attach the event listener to the "remove" button
+        remove.addEventListener("click", addborder);
+
+        // Function to restore the event listener
+        function restoreEventListener() {
+            remove.addEventListener("click", addborder); // Re-attach the event listener
+            console.log("Event listener restored");
+        }
+
+        // Attach the restore event listener to the "restore" button
+        restore.addEventListener("click", restoreEventListener); */
+
+
+   const form=document.getElementById("myform");
+   const display=document.getElementById("displayname");
+
+   form.addEventListener("submit",displayname);
+   
+      function  displayname(event){
+        event.preventDefault();
+
+        const name= document.getElementById("name").value;
+        display.textContent=name;
+
+     form.reset()  // reset the input text 
+   }
+     // change event 
+
+     const colorChange = document.getElementById("colorchange"); 
+    const box = document.getElementById("box");
+
+  
+    colorChange.addEventListener("change", function() {
+        box.style.backgroundColor = colorChange.value; 
+    });
+     </script>
+
+</body>
+</html>

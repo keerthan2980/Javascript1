@@ -175,4 +175,40 @@ console.log(v.charAt(3))// display the character at 3rd index
  ,toLowerCase(), substring()
 object
 
+ Dom manipulation ::
+
+ methods --
+
+DOM Manipulation
+ Methods
+getElementById() 
+getElementsByClassName()
+getElementsByTagName() 
+querySelector() -- we can target the alltypes of elements
+querySelectorAll()
+setAttribute()
+removeAttribute() 
+
+Properties 
+ inner Text -- we change the text 
+
+ innerHTML -- we can change the tag aslo
+
+  textContent  value name  attributes  getAttribute setAttribute 
+innerText: This gives you the visible text of an element, meaning it only shows text that is actually visible to the user.
+ It considers things like hidden elements or text hidden with CSS (e.g., display: none), and it also respects line breaks.
+
+textContent: This gives you all the text inside an element,
+ regardless of whether it's visible or hidden. It doesn't take into account CSS styles like display: none, and it will return the text as it is in the HTML, 
+ including extra spaces and no line breaks.
+
+ Attributes :: style ,id,class same as html 
+
+ events and event listeners:; actions that we performs like clicking mouse ,typing keyboard,form events 
+
+ writing functions using events and performing actions is know as event listeners 
+
+ mouseevent --on
+
+ classlist::
  
